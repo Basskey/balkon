@@ -704,6 +704,9 @@
                       Забронируйте столик
                     </p>
                   </div>
+
+<div>
+
                   <div class="col-12 col-lg-4">
                     <div class="field guests_count">
                       <div class="box">
@@ -770,6 +773,9 @@
 
                     </div>
                   </div>
+
+</div>
+
                   <div class="col-12">
                     <div class="row">
                       <div class="col-12 col-lg-6">
@@ -1008,10 +1014,52 @@
 </body>
 
 <style>
-   @media screen and (max-width: 575px) {
+
+.field {
+  display: flex;
+  justify-content: space-between; }
+
+   @media screen and (max-width: 1199px) {
+      .promo_inner {
+        padding-bottom: 100px !important; 
+      }
+
       #cssf1 {
         padding: 20px 0 !important; }
+
+      .is-booking .scroll-down {
+        bottom: -105px;
+      }
   }
+  }
+  @media screen and (max-width: 1000px) {
+    .container {
+      max-width: 100%; }
+
+    .promo_inner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 100%; }
+
+  .promo_form-wrapper {
+    max-width: 550px;
+    margin: 34px auto 0; }
+
+    .booking_logos {
+      display: flex;
+      justify-content: space-between; }
+
+    .logo-item {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+
+
+  }
+  
 </style>
 
 </html>
