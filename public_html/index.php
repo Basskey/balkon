@@ -638,9 +638,8 @@
                     Адрес
                   </strong>
                   <br>
-                  <span>Большой проспект П.С.,
-                    <br> д. 84, 5 этаж
-                    <br> м. Петроградская (270 м)</span>
+                  <span>Большой пр-т П.С., д.84,&nbsp;5&nbsp;этаж
+                    <br> м.Петроградская (270&nbsp;м)</span>
                 </p>
               </div>
               <div class="logo-item">
@@ -662,8 +661,8 @@
                   <strong>
                     Время работы
                   </strong>
-                  <br> Вс-Чт: 14:00 - 01:00
-                  <br> Пт-Сб: 14:00 - 03:00
+                  <br> Вс-Чт: 14:00&nbsp;-&nbsp;01:00
+                  <br> Пт-Сб: 14:00&nbsp;-&nbsp;03:00
                 </p>
               </div>
               <div class="logo-item">
@@ -683,11 +682,10 @@
                 </div>
                 <p class="g-color-white">
                   <strong>
-                    Примерная
-                    <br class="d-none d-lg-block"> стоимость блюд
+                    Примерная стоимость&nbsp;блюд
                   </strong>
-                  <br> Горячее от 320 р. Десерты от 150 р.
-                  <br> Закуски от 320 р. Напитки от 140 р.
+                  <br> Горячее&nbsp;от&nbsp;320р. Десерты&nbsp;от&nbsp;150р.
+                  <br> Закуски&nbsp;от&nbsp;320р. Напитки&nbsp;от&nbsp;140р.
                 </p>
               </div>
             </div>
@@ -705,9 +703,9 @@
                     </p>
                   </div>
 
-<div>
+<div class="flexfix">
 
-                  <div class="col-12 col-lg-4">
+                  <div class="">
                     <div class="field guests_count">
                       <div class="box">
                         <div class="sprite select_arrow"></div>
@@ -741,7 +739,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-5">
+                  <div class="">
                     <div class="field date">
                       <div class="box date booking-date">
                         <div class="sprite select_arrow"></div>
@@ -757,7 +755,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-3">
+                  <div class="">
                     <div class="field time label autovalidate">
                       <label for="hourreserve1" class="g-color-white d-lg-none">На какое время?</label>
                       <div class="box time">
@@ -1002,7 +1000,7 @@
         <div class="row">
           <div class="col-12 col-md-8">
             <p class="g-color-white">Сайт разработан
-              <a href="http://skyspace.pro/" target="_blank" rel="nofollow" class="g-color-white">SKYSPACEPRO</a>.</p>
+              <a style="text-decoration: underline;" href="http://skyspace.pro/" target="_blank" rel="nofollow" class="g-color-white">SKYSPACEPRO</a></p>
           </div>
         </div>
 
@@ -1015,9 +1013,50 @@
 
 <style>
 
+@media (min-width: 1200px) {
+  .promo_form-wrapper {
+    height: 558px;
+  }
+}
+
+
 .field {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  min-width: unset; }
+
+.flexfix {
+  display: flex;
+  padding: 0 15px;
+  justify-content: space-between;
+  width: 100%; }
+  .flexfix > div:not(:last-child) {
+    min-width: 180px;
+    max-width: 100%;
+    margin-right: 20px; }
+
+.field .box {
+  width: 100%;
+}
+
+.field.booking textarea {
+  margin-bottom: 20px;  }
+
+.logo-item p {
+    margin-top: 10px;
+}
+
+footer {
+  padding: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+footer * {
+    margin: 0;
+    padding: 0;
+  }
 
    @media screen and (max-width: 1199px) {
       .promo_inner {
@@ -1031,8 +1070,14 @@
         bottom: -105px;
       }
   }
-  }
+
   @media screen and (max-width: 1000px) {
+    .flexfix {
+      flex-direction: column; }
+
+    .flexfix > div:not(:last-child) {
+      margin-right: 0; }
+
     .container {
       max-width: 100%; }
 
@@ -1056,10 +1101,44 @@
       flex-direction: column;
       align-items: center;
       text-align: center; }
+      .logo-item p {
+         }
+        .logo-item:not(:last-child) {
+          margin-bottom: 20px;
+        }
 
-
+    .ideals-bg:after {
+      width: 890px;
+    }
   }
+
+  @media screen and (max-width: 530px) {
+
+    .booking_logos {
+      flex-direction: column;
+    }
+
+    .logo-item {
+      width: 100%;
+      align-items: flex-start;
+      flex-direction: row; }
+      .logo-item p {
+        text-align: left; }
+
+    .logo-inner {
+      margin-right: 20px;
+    }
+
+  footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+
   
+  }
+
 </style>
 
 </html>
