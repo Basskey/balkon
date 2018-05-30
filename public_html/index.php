@@ -68,6 +68,10 @@
       display: block
     }
 
+    option {
+      color: #495057;
+    }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
@@ -468,6 +472,8 @@
         padding-bottom: 100px
       }
     }
+
+
   </style>
   <link rel="preload" href="assets/css/style.css?ver=4" as="style" onload="this.rel='stylesheet'">
   <noscript>
@@ -478,6 +484,16 @@
     .navbar-light .navbar-toggler-icon {
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
     }
+
+    @media (min-width: 992px) {
+      button[type=submit] {
+          padding: 0 18px;
+          margin-top: 0;
+          width: 100% !important;
+          text-align: center !important;
+          font-size: 1.05em !important;
+    }
+
   </style>
 
   <!-- Google Tag Manager -->
@@ -675,7 +691,7 @@
                 </p>
               </div>
             </div>
-            <div class="promo_form-wrapper">
+            <div id="cssf1" class="promo_form-wrapper">
               <form class="js-submit-booking" id="submit-booking">
                 <div class="row">
                   <div class="col-12 col-lg-6">
@@ -990,5 +1006,12 @@
     <script data-main="assets/js/app.js?ver=3.0.5" src="assets/js/lib/require.js?ver=3.0.5"></script>
   </body>
 </body>
+
+<style>
+   @media screen and (max-width: 575px) {
+      #cssf1 {
+        padding: 20px 0 !important; }
+  }
+</style>
 
 </html>
