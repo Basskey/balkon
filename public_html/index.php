@@ -1019,6 +1019,8 @@
   }
 }
 
+  #ideals {
+    overflow: hidden; }
 
 .field {
   display: flex;
